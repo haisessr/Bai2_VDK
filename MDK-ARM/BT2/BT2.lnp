@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"bt2\startup_stm32f103xb.o"
+"bt2\led7.o"
+"bt2\main.o"
+"bt2\stm32f1xx_it.o"
+"bt2\stm32f1xx_hal_msp.o"
+"bt2\stm32f1xx_hal_gpio_ex.o"
+"bt2\stm32f1xx_hal_tim.o"
+"bt2\stm32f1xx_hal_tim_ex.o"
+"bt2\stm32f1xx_hal.o"
+"bt2\stm32f1xx_hal_rcc.o"
+"bt2\stm32f1xx_hal_rcc_ex.o"
+"bt2\stm32f1xx_hal_gpio.o"
+"bt2\stm32f1xx_hal_dma.o"
+"bt2\stm32f1xx_hal_cortex.o"
+"bt2\stm32f1xx_hal_pwr.o"
+"bt2\stm32f1xx_hal_flash.o"
+"bt2\stm32f1xx_hal_flash_ex.o"
+"bt2\stm32f1xx_hal_exti.o"
+"bt2\system_stm32f1xx.o"
+--strict --scatter "BT2\BT2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BT2.map" -o BT2\BT2.axf
